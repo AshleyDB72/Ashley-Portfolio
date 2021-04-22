@@ -8,3 +8,14 @@ const setYears = () => {
     }
     return years
 }
+const newSaying= () => {
+    var part1 =sayining[Math.floor(Math.random()* sayining.length)]
+    var part2 = astroSigns[Math.floor(Math.random()* astroSigns.length)]
+    var year=setYears()
+    var part3 = years[Math.floor(Math.random()* years.length)]
+    if (part3 === undefined){
+        part3 = currentYear
+    }
+    console.log("If you are a "+ part2 +".  In the years of "+ part3+" you can expect "+part1)
+}
+var getSaying=newSaying()
