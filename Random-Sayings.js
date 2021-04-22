@@ -4,8 +4,7 @@ var years =[];
 var currentYear = new Date().getFullYear()
 const setYears = () => {
     for (let i=20; i>=0;i--){
-        years[1]= currentYear+1
+        years[i]= currentYear+i
     }
     return years
 }
-console.log(setYears())
